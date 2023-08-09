@@ -1,5 +1,6 @@
 @tool
-extends VBoxContainer
+@icon("icon.svg")
+extends BoxContainer
 class_name SliderSpinBox
 
 
@@ -17,9 +18,9 @@ signal value_changed(value: float)
 ## and [method Object._get_property_list]
 
 ## The [Slider] instance used by SliderSpinBox.
-@onready var slider: HSlider = $Slider
+@onready var slider: HSlider = %Slider
 ## The [SpinBox] instance used by SliderSpinBox.
-@onready var spin_box: SpinBox = $SpinBox
+@onready var spin_box: SpinBox = %SpinBox
 
 
 func _ready() -> void:
